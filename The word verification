@@ -1,0 +1,9 @@
+def literal():
+    name = str(input('Введите слово состоящие из букв:\n'))
+    while True:
+        if name.isalpha() == False:
+            print('Ошибка! Введите пожалуйста только буквы')    
+            name = str(input('Введите слово состоящие из букв:\n'))
+            continue
+        break
+    return name
