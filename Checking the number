@@ -1,0 +1,9 @@
+def num():
+    while True:
+        try:
+            number = int(input('Введите пожалуйста число:\n')) 
+        except ValueError:
+            print('Проверте внимательно вводимое число!')
+        else:
+            return str(number)
+            break
