@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+#converting the first character of a string to uppercase
+print('hello world\n'.capitalize())
+#centers the string so that its width is equal to the width value
+print('happy birthday'.center(30,'*'))
+#expands tab characters in a string, replacing them with the number of spaces
+print('\n\tf_name\tl_name'.expandtabs(10))
+#Returns True if the string includes at least one character 
+#and all characters are alphanumeric
+print('1234asd'.isalnum()) #True
+print('1234 asd'.isalnum()) #False
+#Returns True if the string includes at least one character 
+#and all characters are letters
+print('123qew'.isalpha()) #False
+print('qwe'.isalpha()) #True
+#Returns True if the Unicode string contains only decimal characters
+print('32'.isdecimal()) #True
+print('32.32'.isdecimal()) #False
+#Returns True if the string contains only digits
+print('123'.isdigit()) #True
+print('123a'.isdigit()) #False
+#Returns True if the string contains at least one alphabetic 
+#character and all alphabetic characters are in lowercase
+print('Hello world'.islower()) #False
+print('hello kytty'.islower()) #True
+#Returns True if the Unicode string contains only numeric characters
+print('1234'.isnumeric()) #True
+print('1234q'.isnumeric()) #False
+#Returns True if the string contains only skip characters
+print('qwert'.isspace()) #False
+print('   \n\t'.isspace()) #True
+#Returns True if all words in the string start with an uppercase letter
+print('Hello World'.istitle()) #True
+print('Hello world'.istitle()) #False
+#Returns True if all characters are uppercase
+print('Hello'.isupper()) #False
+print('HELLO'.isupper()) #True
+#Creating a string in which the base string is separated in 
+#turn by each character in the sequence, forming repeated fragments
+print('Hello world'.join('**!!'))
+#Returns the length of the string
+print(len('asd qwe zxc'))
+#Removes all spaces
+print(' Hello '.lstrip())
+#Returns the character that has the maximum numeric value in the string
+print(max('abcd'))
+#Returns the character that has the minimum numeric value in the string
+print(min('abcd'))
+#Aligns the line to the right so that its width is equal to the width value
+print('Hello Kytty'.rjust(30, '*'))
+#Removes all trailing spaces in the string
+print('Hello world'.rstrip('rld'))
+#Splits a string into substrings using the delimiter 
+#specified in the first argument
+print('1,2,3'.split(','))
+print('1,2,3'.split(',', maxsplit =1))
+#splits a string containing newline characters (\n)
+print('Hello world\n'.splitlines())
