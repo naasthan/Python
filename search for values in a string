@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+a = 'Hello world ! Youre as beautiful as ever.'
+#Counts how many times the substring _ occurs in a string
+print(a.count('a'))
+#Returns True if the string ends with the characters
+#specified by the suffix parameter
+print(a.endswith('world')) #False
+print(a.endswith('ever.')) #True
+print(a.endswith('as',0,-6)) #True
+#Determines whether the _ substring occurs in the term, 
+#and outputs the location index.
+print(a.find('world'))
+print(a.find('world',0,10))
+#implements the same functionality as the find () function, 
+#but the search is performed from the end of the string, 
+#not from the beginning
+print(a.rfind('world'))
+print(a.rfind('world',0,10))
+#implements the same functionality as the find () function,
+#but throws an exception if the _ substring is not found
+print(a.index('world'))
+print(a.index('world',6))
+#implements the same functionality as the index () function, 
+#but from the end of the line
+print(a.rindex('world'))
+print(a.rindex('world',6))
+#Replaces all occurrences of the old substring with the new substring
+print(a.replace('world','kitty',1))
